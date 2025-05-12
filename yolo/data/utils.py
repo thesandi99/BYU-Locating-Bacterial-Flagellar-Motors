@@ -16,12 +16,12 @@ import numpy as np
 from PIL import ExifTags, Image, ImageOps
 from tqdm import tqdm
 
-from ...nn.autobackend import check_class_names
-from ...yolo.utils import (DATASETS_DIR, LOGGER, NUM_THREADS, ROOT, SETTINGS_YAML, clean_url, colorstr, emojis,
+from nn.autobackend import check_class_names
+from yolo.utils import (DATASETS_DIR, LOGGER, NUM_THREADS, ROOT, SETTINGS_YAML, clean_url, colorstr, emojis,
                                     yaml_load)
-from ...yolo.utils.checks import check_file, check_font, is_ascii
-from ...yolo.utils.downloads import download, safe_download, unzip_file
-from ...yolo.utils.ops import segments2boxes
+from yolo.utils.checks import check_file, check_font, is_ascii
+from yolo.utils.downloads import download, safe_download, unzip_file
+from yolo.utils.ops import segments2boxes
 
 HELP_URL = 'See https://docs.ultralytics.com/yolov5/tutorials/train_custom_data'
 IMG_FORMATS = 'bmp', 'dng', 'jpeg', 'jpg', 'mpo', 'png', 'tif', 'tiff', 'webp', 'pfm'  # image suffixes
@@ -373,7 +373,7 @@ class HUBDatasetStats():
 
     def get_json(self, save=False, verbose=False):
         """Return dataset JSON for Ultralytics HUB."""
-        from ...yolo.data import YOLODataset  # ClassificationDataset
+        from yolo.data import YOLODataset  # ClassificationDataset
 
         def _round(labels):
             """Update labels to integer class and 4 decimal place floats."""
@@ -424,7 +424,7 @@ class HUBDatasetStats():
 
     def process_images(self):
         """Compress images for Ultralytics HUB."""
-        from ...yolo.data import YOLODataset  # ClassificationDataset
+        from yolo.data import YOLODataset  # ClassificationDataset
 
         for split in 'train', 'val', 'test':
             if self.data.get(split) is None:

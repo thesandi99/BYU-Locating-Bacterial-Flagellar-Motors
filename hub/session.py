@@ -46,7 +46,7 @@ class HUBTrainingSession:
             ConnectionError: If connecting with global API key is not supported.
         """
 
-        from ...hub.auth import Auth
+        from hub.auth import Auth
 
         # Parse input
         if url.startswith('https://hub.ultralytics.com/models/'):

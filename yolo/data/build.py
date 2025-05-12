@@ -9,14 +9,14 @@ import torch
 from PIL import Image
 from torch.utils.data import dataloader, distributed
 
-from ...yolo.data.dataloaders.stream_loaders import (LOADERS, LoadImages, LoadPilAndNumpy, LoadScreenshots,
+from yolo.data.dataloaders.stream_loaders import (LOADERS, LoadImages, LoadPilAndNumpy, LoadScreenshots,
                                                               LoadStreams, LoadTensor, SourceTypes, autocast_list)
-from ...yolo.data.utils import IMG_FORMATS, VID_FORMATS
-from ...yolo.utils.checks import check_file
+from yolo.data.utils import IMG_FORMATS, VID_FORMATS
+from yolo.utils.checks import check_file
 
-from ..utils import RANK, colorstr
-from .dataset import YOLODataset
-from .utils import PIN_MEMORY
+from utils import RANK, colorstr
+from dataset import YOLODataset
+from utils import PIN_MEMORY
 
 
 class InfiniteDataLoader(dataloader.DataLoader):

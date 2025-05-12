@@ -58,16 +58,16 @@ from pathlib import Path
 
 import torch
 
-from ...nn.autobackend import check_class_names
-from ...nn.modules import C2f, Detect, Segment
-from ...nn.tasks import DetectionModel, SegmentationModel
-from ...yolo.cfg import get_cfg
-from ...yolo.utils import (DEFAULT_CFG, LINUX, LOGGER, MACOS, __version__, callbacks, colorstr,
+from nn.autobackend import check_class_names
+from nn.modules import C2f, Detect, Segment
+from nn.tasks import DetectionModel, SegmentationModel
+from yolo.cfg import get_cfg
+from yolo.utils import (DEFAULT_CFG, LINUX, LOGGER, MACOS, __version__, callbacks, colorstr,
                                     get_default_args, yaml_save)
-from ...yolo.utils.checks import check_imgsz, check_requirements, check_version
-from ...yolo.utils.files import file_size
-from ...yolo.utils.ops import Profile
-from ...yolo.utils.torch_utils import get_latest_opset, select_device, smart_inference_mode
+from yolo.utils.checks import check_imgsz, check_requirements, check_version
+from yolo.utils.files import file_size
+from yolo.utils.ops import Profile
+from yolo.utils.torch_utils import get_latest_opset, select_device, smart_inference_mode
 
 ARM64 = platform.machine() in ('arm64', 'aarch64')
 

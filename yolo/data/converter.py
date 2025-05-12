@@ -6,8 +6,8 @@ import cv2
 import numpy as np
 from tqdm import tqdm
 
-from ...yolo.utils.checks import check_requirements
-from ...yolo.utils.files import make_dirs
+from yolo.utils.checks import check_requirements
+from yolo.utils.files import make_dirs
 
 
 def coco91_to_coco80_class():

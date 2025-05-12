@@ -319,7 +319,7 @@ class ClassificationModel(BaseModel):
 
     def _from_detection_model(self, model, nc=1000, cutoff=10):
         """Create a YOLOv5 classification model from a YOLOv5 detection model."""
-        from ...nn.autobackend import AutoBackend
+        from nn.autobackend import AutoBackend
         if isinstance(model, AutoBackend):
             model = model.model  # unwrap DetectMultiBackend
         model.model = model.model[:cutoff]  # backbone

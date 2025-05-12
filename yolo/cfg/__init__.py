@@ -361,7 +361,7 @@ def entrypoint(debug=''):
     if model is None:
         model = 'yolov8n.pt'
         LOGGER.warning(f"WARNING ⚠️ 'model' is missing. Using default 'model={model}'.")
-    from ...yolo.engine.model import YOLO
+    from yolo.engine.model import YOLO
     overrides['model'] = model
     model = YOLO(model, task=task)
     if isinstance(overrides.get('pretrained'), str):

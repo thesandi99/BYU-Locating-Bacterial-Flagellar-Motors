@@ -682,8 +682,8 @@ def get_settings(file=SETTINGS_YAML, version='0.0.3'):
     """
     import hashlib
 
-    from ...yolo.utils.checks import check_version
-    from ...yolo.utils.torch_utils import torch_distributed_zero_first
+    from yolo.utils.checks import check_version
+    from yolo.utils.torch_utils import torch_distributed_zero_first
 
     git_dir = get_git_dir()
     root = git_dir or Path()

@@ -32,7 +32,7 @@ import numpy as np
 import torch.cuda
 from tqdm import tqdm
 
-from . import YOLO
+from yolo.engine.model import YOLO
 from yolo.engine.exporter import export_formats
 from yolo.utils import LINUX, LOGGER, MACOS, ROOT, SETTINGS
 from yolo.utils.checks import check_requirements, check_yolo

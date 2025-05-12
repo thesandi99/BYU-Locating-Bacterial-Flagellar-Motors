@@ -13,7 +13,7 @@ import torchvision
 
 from yolo.utils import LOGGER
 
-from metrics import box_iou
+from .metrics import box_iou
 
 
 class Profile(contextlib.ContextDecorator):

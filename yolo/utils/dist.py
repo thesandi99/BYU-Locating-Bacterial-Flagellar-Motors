@@ -8,7 +8,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-from . import USER_CONFIG_DIR
+from yolo.utils import USER_CONFIG_DIR
 from torch_utils import TORCH_1_9
 
 

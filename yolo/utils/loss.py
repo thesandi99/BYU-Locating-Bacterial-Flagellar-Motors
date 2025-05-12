@@ -7,9 +7,9 @@ import torch.nn.functional as F
 from yolo.utils.metrics import OKS_SIGMA
 from yolo.utils.ops import crop_mask, xywh2xyxy, xyxy2xywh
 from yolo.utils.tal import TaskAlignedAssigner, dist2bbox, make_anchors
-from metrics import bbox_iou
+from .metrics import bbox_iou
 
-from tal import bbox2dist
+from .tal import bbox2dist
 from yolo.utils.wiou import IoU_Cal
 
 class VarifocalLoss(nn.Module):

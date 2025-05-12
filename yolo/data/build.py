@@ -14,7 +14,7 @@ from yolo.data.dataloaders.stream_loaders import (LOADERS, LoadImages, LoadPilAn
 from yolo.data.utils import IMG_FORMATS, VID_FORMATS
 from yolo.utils.checks import check_file
 
-from .utils import RANK, colorstr
+from yolo.utils import RANK, colorstr
 from .dataset import YOLODataset
 from .utils import PIN_MEMORY
 

@@ -3,7 +3,7 @@ from copy import copy
 
 import numpy as np
 import sys
-sys.path.append("/kaggle/working/BGF-YOLO")
+sys.path.append("/kaggle/working/BYU-Locating-Bacterial-Flagellar-Motors")
 from nn.tasks import DetectionModel
 from yolo import bgf
 from yolo.data import build_dataloader, build_yolo_dataset

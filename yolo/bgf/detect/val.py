@@ -6,7 +6,7 @@ from pathlib import Path
 import numpy as np
 import torch
 import sys
-sys.path.append("/kaggle/working/BGF-YOLO")
+sys.path.append("/kaggle/working/BYU-Locating-Bacterial-Flagellar-Motors")
 from yolo.data import build_dataloader, build_yolo_dataset
 from yolo.data.dataloaders.v5loader import create_dataloader
 from yolo.engine.validator import BaseValidator

@@ -4,7 +4,7 @@ import glob
 import xml.etree.ElementTree as ET
 import numpy as np
 import sys
-sys.path.append("/kaggle/working/BGF-YOLO")
+sys.path.append("/kaggle/working/BYU-Locating-Bacterial-Flagellar-Motors")
 from datasets.data_config import get_train_data
 from PIL import  Image
 

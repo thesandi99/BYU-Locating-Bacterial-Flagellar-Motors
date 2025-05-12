@@ -4,8 +4,8 @@ import glob
 import xml.etree.ElementTree as ET
 import numpy as np
 import sys
-sys.path.append("/root/BGF-YOLO")
-from ...datasets.data_config import get_train_data
+sys.path.append("/kaggle/working/BGF-YOLO")
+from datasets.data_config import get_train_data
 from PIL import  Image
 
 # TRAIN, VAL or TEST folder

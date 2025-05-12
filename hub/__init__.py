@@ -2,10 +2,10 @@
 
 import requests
 
-from ...hub.auth import Auth
-from ...hub.utils import PREFIX
-from ...yolo.data.utils import HUBDatasetStats
-from ...yolo.utils import LOGGER, SETTINGS, USER_CONFIG_DIR, yaml_save
+from hub.auth import Auth
+from hub.utils import PREFIX
+from yolo.data.utils import HUBDatasetStats
+from yolo.utils import LOGGER, SETTINGS, USER_CONFIG_DIR, yaml_save
 
 
 def login(api_key=''):

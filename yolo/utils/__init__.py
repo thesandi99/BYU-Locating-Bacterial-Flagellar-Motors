@@ -21,7 +21,7 @@ import numpy as np
 import torch
 import yaml
 
-from .. import __version__
+from . import __version__
 
 # PyTorch Multi-GPU DDP Constants
 RANK = int(os.getenv('RANK', -1))

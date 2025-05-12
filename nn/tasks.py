@@ -7,15 +7,15 @@ from pathlib import Path
 import torch
 import torch.nn as nn
 
-from ...nn.modules import (AIFI, C1, C2, C3, C3TR, SPP, SPPF, Bottleneck, BottleneckCSP, C2f, C3Ghost, C3x,
+from nn.modules import (AIFI, C1, C2, C3, C3TR, SPP, SPPF, Bottleneck, BottleneckCSP, C2f, C3Ghost, C3x,
                                     Classify, Concat, Conv, Conv2, ConvTranspose, Detect, DWConv, DWConvTranspose2d,
                                     Focus, GhostBottleneck, GhostConv, HGBlock, HGStem, Pose, RepC3, RepConv,
                                     RTDETRDecoder, Segment, cbam_block, eca_block, CA_Block, se_block,CSPStage,BiLevelRoutingAttention)
-from ...yolo.utils import DEFAULT_CFG_DICT, DEFAULT_CFG_KEYS, LOGGER, colorstr, emojis, yaml_load
-from ...yolo.utils.checks import check_requirements, check_suffix, check_yaml
-from ...yolo.utils.loss import v8DetectionLoss
-from ...yolo.utils.plotting import feature_visualization
-from ...yolo.utils.torch_utils import (fuse_conv_and_bn, fuse_deconv_and_bn, initialize_weights,
+from yolo.utils import DEFAULT_CFG_DICT, DEFAULT_CFG_KEYS, LOGGER, colorstr, emojis, yaml_load
+from yolo.utils.checks import check_requirements, check_suffix, check_yaml
+from yolo.utils.loss import v8DetectionLoss
+from yolo.utils.plotting import feature_visualization
+from yolo.utils.torch_utils import (fuse_conv_and_bn, fuse_deconv_and_bn, initialize_weights,
                                                 intersect_dicts, make_divisible, model_info, scale_img, time_sync)
 
 try:

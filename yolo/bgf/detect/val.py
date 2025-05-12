@@ -6,15 +6,15 @@ from pathlib import Path
 import numpy as np
 import torch
 import sys
-sys.path.append("/root/BGF-YOLO")
-from ...yolo.data import build_dataloader, build_yolo_dataset
-from ...yolo.data.dataloaders.v5loader import create_dataloader
-from ...yolo.engine.validator import BaseValidator
-from ...yolo.utils import DEFAULT_CFG, LOGGER, colorstr, ops
-from ...yolo.utils.checks import check_requirements
-from ...yolo.utils.metrics import ConfusionMatrix, DetMetrics, box_iou
-from ...yolo.utils.plotting import output_to_target, plot_images
-from ...yolo.utils.torch_utils import de_parallel
+sys.path.append("/kaggle/working/BGF-YOLO")
+from yolo.data import build_dataloader, build_yolo_dataset
+from yolo.data.dataloaders.v5loader import create_dataloader
+from yolo.engine.validator import BaseValidator
+from yolo.utils import DEFAULT_CFG, LOGGER, colorstr, ops
+from yolo.utils.checks import check_requirements
+from yolo.utils.metrics import ConfusionMatrix, DetMetrics, box_iou
+from yolo.utils.plotting import output_to_target, plot_images
+from yolo.utils.torch_utils import de_parallel
 
 
 class DetectionValidator(BaseValidator):

@@ -3,15 +3,15 @@ from copy import copy
 
 import numpy as np
 import sys
-sys.path.append("/root/BGF-YOLO")
-from ...nn.tasks import DetectionModel
-from ...yolo import bgf
-from ...yolo.data import build_dataloader, build_yolo_dataset
-from ...yolo.data.dataloaders.v5loader import create_dataloader
-from ...yolo.engine.trainer import BaseTrainer
-from ...yolo.utils import DEFAULT_CFG, LOGGER, RANK, colorstr
-from ...yolo.utils.plotting import plot_images, plot_labels, plot_results
-from ...yolo.utils.torch_utils import de_parallel, torch_distributed_zero_first
+sys.path.append("/kaggle/working/BGF-YOLO")
+from nn.tasks import DetectionModel
+from yolo import bgf
+from yolo.data import build_dataloader, build_yolo_dataset
+from yolo.data.dataloaders.v5loader import create_dataloader
+from yolo.engine.trainer import BaseTrainer
+from yolo.utils import DEFAULT_CFG, LOGGER, RANK, colorstr
+from yolo.utils.plotting import plot_images, plot_labels, plot_results
+from yolo.utils.torch_utils import de_parallel, torch_distributed_zero_first
 
 
 # BaseTrainer python usage

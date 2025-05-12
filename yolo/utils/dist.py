@@ -9,7 +9,7 @@ import tempfile
 from pathlib import Path
 
 from . import USER_CONFIG_DIR
-from .torch_utils import TORCH_1_9
+from torch_utils import TORCH_1_9
 
 
 def find_free_network_port() -> int:

@@ -2,9 +2,9 @@
 
 import torch
 
-from ...yolo.engine.predictor import BasePredictor
-from ...yolo.engine.results import Results
-from ...yolo.utils import DEFAULT_CFG, ROOT, ops
+from yolo.engine.predictor import BasePredictor
+from yolo.engine.results import Results
+from yolo.utils import DEFAULT_CFG, ROOT, ops
 
 
 class DetectionPredictor(BasePredictor):

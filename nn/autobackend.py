@@ -15,10 +15,10 @@ import torch
 import torch.nn as nn
 from PIL import Image
 
-from ...yolo.utils import LINUX, LOGGER, ROOT, yaml_load
-from ...yolo.utils.checks import check_requirements, check_suffix, check_version, check_yaml
-from ...yolo.utils.downloads import attempt_download_asset, is_url
-from ...yolo.utils.ops import xywh2xyxy
+from yolo.utils import LINUX, LOGGER, ROOT, yaml_load
+from yolo.utils.checks import check_requirements, check_suffix, check_version, check_yaml
+from yolo.utils.downloads import attempt_download_asset, is_url
+from yolo.utils.ops import xywh2xyxy
 
 
 def check_class_names(names):

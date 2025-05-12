@@ -15,9 +15,9 @@ import requests
 import torch
 from PIL import Image
 
-from ...yolo.data.utils import IMG_FORMATS, VID_FORMATS
-from ...yolo.utils import LOGGER, ROOT, is_colab, is_kaggle, ops
-from ...yolo.utils.checks import check_requirements
+from yolo.data.utils import IMG_FORMATS, VID_FORMATS
+from yolo.utils import LOGGER, ROOT, is_colab, is_kaggle, ops
+from yolo.utils.checks import check_requirements
 
 
 @dataclass

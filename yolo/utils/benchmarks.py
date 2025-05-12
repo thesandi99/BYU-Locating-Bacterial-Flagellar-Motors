@@ -32,13 +32,13 @@ import numpy as np
 import torch.cuda
 from tqdm import tqdm
 
-from .. import YOLO
-from ...yolo.engine.exporter import export_formats
-from ...yolo.utils import LINUX, LOGGER, MACOS, ROOT, SETTINGS
-from ...yolo.utils.checks import check_requirements, check_yolo
-from ...yolo.utils.downloads import download
-from ...yolo.utils.files import file_size
-from ...yolo.utils.torch_utils import select_device
+from . import YOLO
+from yolo.engine.exporter import export_formats
+from yolo.utils import LINUX, LOGGER, MACOS, ROOT, SETTINGS
+from yolo.utils.checks import check_requirements, check_yolo
+from yolo.utils.downloads import download
+from yolo.utils.files import file_size
+from yolo.utils.torch_utils import select_device
 
 
 def benchmark(model=Path(SETTINGS['weights_dir']) / 'yolov8n.pt',
